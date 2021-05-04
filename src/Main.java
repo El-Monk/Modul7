@@ -13,21 +13,13 @@ public class Main {
         System.out.println(warehouse + " " + picker + " " + courier);
 
         //проверка после 1500 действий
-        for (int i = 1; i < 1500; i++) {
+        for (int i = 1; i <= 1500; i++) {
             picker.doWork();
             courier.doWork();
         }
         picker.bonus();
         courier.bonus();
         System.out.println(warehouse + " " + picker + " " + courier);
-
-        //проверка после 1501 дейставия
-        picker.doWork();
-        courier.doWork();
-        picker.bonus();
-        courier.bonus();
-        System.out.println(warehouse + " " + picker + " " + courier);
-
 
     }
 }
